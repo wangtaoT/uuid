@@ -1,5 +1,6 @@
-package com.cyril.uuiddemo;/**
- * Created by cyril on 16/1/8.
+package com.cyril.uuiddemo;
+/**
+ * Created by wangtao on 16/1/8.
  */
 
 import javax.crypto.Cipher;
@@ -8,30 +9,6 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-
-/**
- * ----------Dragon be here!----------/
- * ***┏┓******┏┓*********
- * *┏━┛┻━━━━━━┛┻━━┓*******
- * *┃             ┃*******
- * *┃     ━━━     ┃*******
- * *┃             ┃*******
- * *┃  ━┳┛   ┗┳━  ┃*******
- * *┃             ┃*******
- * *┃     ━┻━     ┃*******
- * *┃             ┃*******
- * *┗━━━┓     ┏━━━┛*******
- * *****┃     ┃神兽保佑*****
- * *****┃     ┃代码无BUG！***
- * *****┃     ┗━━━━━━━━┓*****
- * *****┃              ┣┓****
- * *****┃              ┏┛****
- * *****┗━┓┓┏━━━━┳┓┏━━━┛*****
- * *******┃┫┫****┃┫┫********
- * *******┗┻┛****┗┻┛*********
- * ━━━━━━神兽出没━━━━━━by:wangziren
- */
-
 
 public class EncryptUtils {
     public static String encryptDES(String encryptString, String encryptKey) throws Exception {
@@ -50,7 +27,6 @@ public class EncryptUtils {
         //加密同时解码成字符串返回
         return new String(BASE64.encode(cipher.doFinal(encryptString.getBytes("UTF-8"))));
     }
-
     public static String decryptDES(String decodeString, String decodeKey) throws Exception {
         //使用指定密钥构造IV
         IvParameterSpec iv = new IvParameterSpec(decodeKey.getBytes());
