@@ -1,6 +1,6 @@
 package com.cyril.uuiddemo;
 /**
- * Created by cyril on 16/1/7.
+ * Created by wangtao on 16/1/7.
  */
 
 import android.content.Context;
