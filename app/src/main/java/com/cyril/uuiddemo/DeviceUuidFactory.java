@@ -1,4 +1,5 @@
-package com.cyril.uuiddemo;/**
+package com.cyril.uuiddemo;
+/**
  * Created by cyril on 16/1/7.
  */
 
@@ -16,30 +17,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.UUID;
-
-/**
- * ----------Dragon be here!----------/
- * ***┏┓******┏┓*********
- * *┏━┛┻━━━━━━┛┻━━┓*******
- * *┃             ┃*******
- * *┃     ━━━     ┃*******
- * *┃             ┃*******
- * *┃  ━┳┛   ┗┳━  ┃*******
- * *┃             ┃*******
- * *┃     ━┻━     ┃*******
- * *┃             ┃*******
- * *┗━━━┓     ┏━━━┛*******
- * *****┃     ┃神兽保佑*****
- * *****┃     ┃代码无BUG！***
- * *****┃     ┗━━━━━━━━┓*****
- * *****┃              ┣┓****
- * *****┃              ┏┛****
- * *****┗━┓┓┏━━━━┳┓┏━━━┛*****
- * *******┃┫┫****┃┫┫********
- * *******┗┻┛****┗┻┛*********
- * ━━━━━━神兽出没━━━━━━by:wangziren
- */
-
 
 public class DeviceUuidFactory {
     protected static final String PREFS_FILE = "dev_id.xml";
