@@ -1,31 +1,7 @@
-package com.cyril.uuiddemo;/**
- * Created by cyril on 16/1/8.
- */
-
+package com.cyril.uuiddemo;
 /**
- * ----------Dragon be here!----------/
- * ***┏┓******┏┓*********
- * *┏━┛┻━━━━━━┛┻━━┓*******
- * *┃             ┃*******
- * *┃     ━━━     ┃*******
- * *┃             ┃*******
- * *┃  ━┳┛   ┗┳━  ┃*******
- * *┃             ┃*******
- * *┃     ━┻━     ┃*******
- * *┃             ┃*******
- * *┗━━━┓     ┏━━━┛*******
- * *****┃     ┃神兽保佑*****
- * *****┃     ┃代码无BUG！***
- * *****┃     ┗━━━━━━━━┓*****
- * *****┃              ┣┓****
- * *****┃              ┏┛****
- * *****┗━┓┓┏━━━━┳┓┏━━━┛*****
- * *******┃┫┫****┃┫┫********
- * *******┗┻┛****┗┻┛*********
- * ━━━━━━神兽出没━━━━━━by:wangziren
+ * Created by wangtao on 16/1/8.
  */
-
-
 public class BASE64 {
     private static char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
             .toCharArray();
