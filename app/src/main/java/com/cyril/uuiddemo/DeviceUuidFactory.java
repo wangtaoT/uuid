@@ -19,11 +19,11 @@ import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
 public class DeviceUuidFactory {
-    protected static final String PREFS_FILE = "dev_id.xml";
+    protected static final String PREFS_FILE            = "dev_id.xml";
     protected static final String DEVICE_UUID_FILE_NAME = ".dev_id.txt";
-    protected static final String PREFS_DEVICE_ID = "dev_id";
-    protected static final String KEY = "cyril'98";
-    protected static UUID uuid;
+    protected static final String PREFS_DEVICE_ID       = "dev_id";
+    protected static final String KEY                   = "cyril'98";
+    protected static       UUID   uuid;
 
     public DeviceUuidFactory(Context context) {
         if (uuid == null) {
@@ -47,8 +47,7 @@ public class DeviceUuidFactory {
                                         e.printStackTrace();
                                     }
                                 } else {
-                                    final String deviceId = ((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
-                                    uuid = deviceId != null ? UUID.nameUUIDFromBytes(deviceId.getBytes("utf8")) : UUID.randomUUID();
+                                    uuid = UUID.randomUUID();
                                     try {
                                         saveDeviceUuidToSD(EncryptUtils.encryptDES(uuid.toString(), KEY));
                                     } catch (Exception e) {
